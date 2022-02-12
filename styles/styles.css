@@ -48,7 +48,7 @@ html {
   font-size: 35px;
   text-align: center;
   margin-top: 33px;
-  line-height: 43px;
+  margin-bottom: 10px;
 }
 .price-card__subtitle {
   font-size: 20px;
