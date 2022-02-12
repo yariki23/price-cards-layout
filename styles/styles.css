@@ -8,7 +8,6 @@ html {
   font-weight: 300;
   font-size: 15px;
   color: #fff;
-  min-height: 100vh;
 }
 
 .main {
@@ -16,28 +15,44 @@ html {
   display: flex;
   width: 1440px;
   height: 1000px;
-  padding: 115px 132px;
   margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .price-card {
   background-color: #334247;
   width: 380px;
   margin-right: 18px;
+  height: 770px;
 }
 .price-card:last-child {
   margin-right: 0;
 }
+.price-card:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+}
+.price-card:nth-child(2)::after {
+  content: " ";
+  width: 122px;
+  height: 123px;
+  background-image: url(../images/badge.png);
+  z-index: 2;
+  position: absolute;
+  top: -18px;
+  right: -18px;
+}
 .price-card__title {
   font-weight: bold;
   font-size: 35px;
-  line-height: 43px;
   text-align: center;
   margin-top: 33px;
 }
 .price-card__subtitle {
   font-size: 20px;
-  line-height: 24px;
+  font-weight: 300;
+  display: block;
 }
 .price-card__price {
   display: flex;
