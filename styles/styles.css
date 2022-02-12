@@ -44,13 +44,17 @@ html {
   font-weight: bold;
   font-size: 35px;
   text-align: center;
+  margin: 0;
   margin-top: 33px;
   line-height: 43px;
 }
 .price-card__subtitle {
+  display: block;
+  margin: 0;
   font-size: 20px;
   line-height: 24px;
   font-weight: 300;
+  margin-bottom: 33px;
 }
 .price-card__price {
   display: flex;
