@@ -29,10 +29,6 @@ html {
 .price-card:last-child {
   margin-right: 0;
 }
-.price-card:nth-child(2) {
-  position: relative;
-  overflow: hidden;
-}
 .price-card .popular-product {
   position: absolute;
   width: 122px;

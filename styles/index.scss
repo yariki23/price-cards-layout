@@ -26,10 +26,11 @@ html{
     &:last-child{
         margin-right: 0;
     }
-    &:nth-child(2){
-        position: relative;
-    overflow: hidden;
-    }
+    // &:nth-child(2){
+    //     position: relative;
+    //     overflow: hidden;
+
+    // }
     .popular-product{
         position: absolute;
         width: 122px;
