@@ -13,7 +13,7 @@ html{
     background-color: $color-background;
     display: flex;
     width: 1440px;
-    // height: 1000px;
+    height: 870px;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -23,8 +23,6 @@ html{
     width: 380px;
     margin-right: 18px;
     height: 770px;
-    margin-top: 115px;
-    margin-bottom: 115px;
     &:last-child{
         margin-right: 0;
     }
