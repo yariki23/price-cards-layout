@@ -39,9 +39,8 @@ html{
         right: -76px;
         top: -74px;
         &__text{
-
             z-index: 5;
-            color: #fff;
+            color: $color-text;
             position: absolute;
             bottom: -36px;
             font-weight: bold;
@@ -112,7 +111,6 @@ html{
             .price-card:nth-child(3) &::before{
                 background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
             }
-
             &:nth-child(odd){
                 background-color: #2A3438;
             }
