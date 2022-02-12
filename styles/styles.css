@@ -33,13 +33,10 @@ html {
   position: relative;
   overflow: hidden;
 }
-.price-card:nth-child(2)::after {
-  content: " ";
+.price-card .popular-product {
+  position: absolute;
   width: 122px;
   height: 123px;
-  background-image: url(../images/badge.png);
-  z-index: 2;
-  position: absolute;
   top: -18px;
   right: -18px;
 }
@@ -48,13 +45,12 @@ html {
   font-size: 35px;
   text-align: center;
   margin-top: 33px;
-  margin-bottom: 10px;
   line-height: 43px;
 }
 .price-card__subtitle {
   font-size: 20px;
+  line-height: 24px;
   font-weight: 300;
-  display: block;
 }
 .price-card__price {
   display: flex;

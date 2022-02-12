@@ -30,30 +30,34 @@ html{
         position: relative;
      overflow: hidden;
     }
-    &:nth-child(2)::after{
-        content: " ";
+    .popular-product{
+        position: absolute;
         width: 122px;
         height: 123px;
-        background-image: url(../images/badge.png);
-        z-index: 2;
-        position: absolute;
         top: -18px;
         right: -18px;
-        
     }
+    // &:nth-child(2)::after{
+    //     content: " ";
+    //     width: 122px;
+    //     height: 123px;
+    //     background-image: url();
+    //     z-index: 2;
+    //     position: absolute;
+    //     top: -18px;
+    //     right: -18px;
+    // }
 		&__title {
             font-weight: bold;
             font-size: 35px;
             text-align: center;
             margin-top: 33px;
-            margin-bottom: 10px;
             line-height: 43px;
 		}
 		&__subtitle {
             font-size: 20px;
+            line-height: 24px;
             font-weight: 300;
-
-            display: block;
 		}
 		&__price {
             display: flex;
