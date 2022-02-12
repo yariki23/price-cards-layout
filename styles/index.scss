@@ -13,7 +13,7 @@ html{
     background-color: $color-background;
     display: flex;
     width: 1440px;
-    height: 1000px;
+    // height: 1000px;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -23,12 +23,14 @@ html{
     width: 380px;
     margin-right: 18px;
     height: 770px;
+    margin-top: 115px;
+    margin-bottom: 115px;
     &:last-child{
         margin-right: 0;
     }
     &:nth-child(2){
         position: relative;
-     overflow: hidden;
+    overflow: hidden;
     }
     .popular-product{
         position: absolute;
@@ -37,16 +39,6 @@ html{
         top: -18px;
         right: -18px;
     }
-    // &:nth-child(2)::after{
-    //     content: " ";
-    //     width: 122px;
-    //     height: 123px;
-    //     background-image: url();
-    //     z-index: 2;
-    //     position: absolute;
-    //     top: -18px;
-    //     right: -18px;
-    // }
 		&__title {
             font-weight: bold;
             font-size: 35px;
