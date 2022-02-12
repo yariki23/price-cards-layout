@@ -26,17 +26,29 @@ html{
     &:last-child{
         margin-right: 0;
     }
-    // &:nth-child(2){
-    //     position: relative;
-    //     overflow: hidden;
-
-    // }
+    &:nth-child(2){
+        position: relative;
+        overflow: hidden;
+    }
     .popular-product{
         position: absolute;
-        width: 122px;
-        height: 123px;
-        top: -18px;
-        right: -18px;
+        width: 150px;
+        height: 150px;
+        border: 25px solid #DC3F45;
+        transform: rotate(45deg);
+        right: -76px;
+        top: -74px;
+        &__text{
+
+            z-index: 5;
+            color: #fff;
+            position: absolute;
+            bottom: -36px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            right: 14px;
+        }
     }
 		&__title {
             font-weight: bold;
