@@ -49,6 +49,7 @@ html {
   text-align: center;
   margin-top: 33px;
   margin-bottom: 10px;
+  line-height: 43px;
 }
 .price-card__subtitle {
   font-size: 20px;
@@ -70,7 +71,7 @@ html {
   font-size: 15px;
   line-height: 18px;
   text-align: center;
-  padding: 0 26.51px 0 26px;
+  padding: 0 26px 0 26px;
   margin-bottom: 40px;
 }
 .price-card__options-list {
@@ -107,7 +108,7 @@ html {
 }
 .price-card__order-btn {
   border-radius: 20px;
-  width: 154.63px;
+  width: 154px;
   height: 40px;
   text-align: center;
   line-height: 40px;
