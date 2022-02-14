@@ -9,53 +9,45 @@ html{
     font-size: 15px;
     color: $color-text;
 }
-.main{
-    background-color: $color-background;
+.price-cards{
     display: flex;
-    width: 1440px;
-    height: 900px;
-    margin: auto;
     justify-content: center;
     align-items: center;
+    height: 900px;
+    margin: auto;
+    background-color: $color-background;
 }
 .price-card {
+    position: relative;
     background-color: $color-card-bg;
     width: 380px;
-    margin-right: 18px;
     height: 770px;
+    margin-right: 18px;
+    overflow: hidden;
     &:last-child{
         margin-right: 0;
     }
-    &:nth-child(2){
-        position: relative;
-        overflow: hidden;
-    }
     .popular-product{
         position: absolute;
+        top: 30px;
+        right: -30px;
         width: 150px;
-        height: 150px;
-        border: 25px solid #DC3F45;
+        height: 24px;
+        background-color: #DC3F45;
         transform: rotate(45deg);
-        right: -76px;
-        top: -74px;
-        &__text{
-            z-index: 5;
-            color: $color-text;
-            position: absolute;
-            bottom: -36px;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 17px;
-            right: 14px;
-        }
+        color: $color-text;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
     }
 		&__title {
             font-weight: bold;
             font-size: 35px;
             text-align: center;
+            line-height: 43px;
             margin: 0;
             margin-top: 33px;
-            line-height: 43px;
 		}
 		&__subtitle {
             display: block;
@@ -77,11 +69,11 @@ html{
             line-height: 67px;
 		}
 		&__description {
+            padding: 0 26px 0 26px;
+            margin-bottom: 40px;
             font-size: 15px;
             line-height: 18px;
             text-align: center;
-            padding: 0 26px 0 26px;
-            margin-bottom: 40px;
 		}
 		&__options-list {
             list-style: none;
@@ -89,54 +81,50 @@ html{
             margin-bottom: 39px;
 		}
 		&__list-item {
+            position: relative;
             line-height: 50px;
             padding-left: 59px;
             height: 50px;
             width: 100%;
-            position: relative;
-            &::before{
-                content: "";
-                width: 15px;
-                height: 13px;
-                position: absolute;
-                top: calc(50% - 6.5px);
-                left: 22px;
-            }
-            .price-card:nth-child(1) &::before{
-                background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
-            }
-            .price-card:nth-child(2) &::before{
-                background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
-            }
-            .price-card:nth-child(3) &::before{
-                background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
-            }
             &:nth-child(odd){
                 background-color: #2A3438;
             }
 		}
+        &__icon-mark{
+            position: absolute;
+            top: calc(50% - 6.5px);
+            left: 22px;
+            width: 15px;
+            height: 13px;
+            &_green{
+                background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
+            }
+            &_blue{
+                background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
+            }
+            &_orange{
+                background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
+            }
+        }
 		&__order-btn {
             border-radius: 20px;
             width: 154px;
-            height: 40px;
             text-align: center;
             line-height: 40px;
             font-size: 14px;
-            line-height: 17px;
-            font-weight: 400px;
-            margin-bottom: 40px;
             border: none;
             margin: auto;
             display: block;
             color: $color-text;
+            
 		}
-}
-.color-basic-bg{
-    background-color: $color-for-basic;
-}
-.color-business-bg{
-    background-color: $color-for-business;
-}
-.color-webshop-bg{
-    background-color: $color-for-webshop;
+        &__price_bg-green, &__order-btn_bg-green{
+            background-color: $color-for-basic;
+        }
+        &__price_bg-blue, &__order-btn_bg-blue{
+            background-color: $color-for-business;
+        }
+        &__price_bg-orange, &__order-btn_bg-orange{
+            background-color: $color-for-webshop;
+        }
 }
