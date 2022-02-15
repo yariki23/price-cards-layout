@@ -12,6 +12,7 @@ Site supports desktop versions
 - [Sass (Scss)](https://sass-lang.com/)
 - [BEM methodology](https://en.bem.info/methodology/)
 
+
 ### Author
 
 - Yaroslav Shergin
